@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="reservas.css" media="screen">
+    <script src="reservas.js"></script>
+    <title>Reservas</title>
+</head>
+
+<body>
+    <header>
+        <div class="hideMenuMovil">
+            <img src="img/Icon/menu.png" alt="Menu" id="imgMenu">
+            <img src="img/Icon/menuAbierto.png" alt="MenuAbierto" id="imgMenuAbierto">
+        </div>
+
+        <nav class="navMovil">
+            <ul>
+                <li><a href="instalaciones.html">Instalaciones</a></li>
+                <li><a href="salaReservas.html">Reservas</a></li>
+                <li><a href="contactos.html">Sobre Nosotros</a></li>
+                <li><a href="#">Inicia Sesión</a></li>
+                <li><a href="#">Regístrate</a></li>
+            </ul>
+        </nav>
+
+        <a href="index.html"><img src="img/logoGadesSports.png" alt="logo Empresa"></a>
+        
+        <nav class="navbar">
+            <a href="instalaciones.html">Instalaciones</a>
+            <a href="salaReservas.html">Reservas</a>
+            <a href="contactos.html">Sobre Nosotros</a>
+        </nav>
+
+        <div id="contendorRegistro">
+            <a href="#">Inicia Sesión</a>
+            <input type="button" value="Regístrate">
+        </div>  
+    </header>
+
+    <div id="error_message"></div>
+    <div id="success_message"></div>
+
+    <div class="tile">
+        <div class="information">
+            <img src="img/bahiasur.jpg" alt="">
+            <h1>Bahia sur</h1>
+            <div class="reviews">
+                <b>5.0</b>
+                <img src="img/estrellas.png" alt="">
+                <a> 3 reviews </a>
+            </div>
+            <div class="bar"></div>
+            <div class="data">
+                <img src="img/Icon/map.png" alt="">
+                <p>San Fernando, Centro Comercial Bahia Sur, 11023</p>
+            </div>
+            <div class="data">
+                <img src="img/Icon/schedules.png" alt="">
+                <p>Close at 7:45pm</p>
+            </div>
+            <div class="data">
+                <img src="img/Icon/price.png" alt="">
+                <p>12€ - 20€ per hour</p>
+            </div>
+            <div class="data">
+                <img src="img/Icon/people.png" alt="">
+                <p>1 - 12 players</p>
+            </div>
+            <div class="data">
+                <img src="img/Icon/phone.png" alt="">
+                <p>670 065 984</p>
+            </div>
+            <div class="data">
+                <img src="img/Icon/web.png" alt="">
+                <p>http://www.sanfernando.es/</p>
+            </div>
+        </div>
+        <div class="booking">
+            <div class="title_bar">
+                <h1>Book this court</h1>
+            </div>
+            <form name="reservasForm" onsubmit="return validateForm()">
+                <div class="firstname">
+                    <label>Firstname:</label><br>
+                    <input type="text" id="fname" name="fname" value="">
+                </div>
+                <div class="lastname">
+                    <label>Lastname:</label><br>
+                    <input type="text" id="lname" name="lname" value="">
+                </div>
+                <div class="email">
+                    <label>Email:</label><br>
+                    <input type="text" id="email" name="email" value="">
+                </div>
+                <div class="reservation_date">
+                    <label>Date of booking:</label><br>
+                    <input type="date" id="date" name="Date">
+                </div>
+                <div class="reservation_hour">
+                    <label>Hour of booking:</label><br>
+                    <select id="hour" name="hour">
+                        <option value="12">12:00</option>
+                        <option value="13">13:00</option>
+                        <option value="14">14:00</option>
+                        <option value="17">17:00</option>
+                        <option value="18">18:00</option>
+                        <option value="19">19:00</option>
+                    </select>
+                </div>
+                <div class="duration">
+                    <label>Duration:</label><br><br><br>
+                    <div class="bullet">
+                        <input type="radio" id="hour1" name="duration" value="1">
+                        <label>1 hour</label>
+                    </div>
+                    <div class="bullet">
+                        <input type="radio" id="hour2" name="duration" value="2">
+                        <label>2 hours</label>
+                    </div>
+                    <div class="bullet">
+                        <input type="radio" id="hour3" name="duration" value="3">
+                        <label>3 hours</label>
+                    </div>
+                </div>
+                <div class="people">
+                    <label>People:</label><br>
+                    <select id="people" name="people_select">
+                        <option value="2">1 - 2</option>
+                        <option value="6">3 - 6</option>
+                        <option value="8">7 - 8</option>
+                        <option value="12">9 - 12</option>
+                        <option value="16">13 - 16</option>
+                        <option value="20">17 - 20</option>
+                    </select>
+                </div>
+                <div class="material">
+                    <label>Material:</label><br><br><br>
+                    <div class="bullet">
+                        <input type="radio" id="need" name="material" value="true">
+                        <label>Need</label>
+                    </div>
+                    <div class="bullet">
+                        <input type="radio" id="!need" name="material" value="false">
+                        <label>Don't need</label>
+                    </div>
+                </div>
+                <input id="submit_button" type="submit" value="Book it">
+            </form>
+        </div>
+    </div>
+
+    <footer>
+        <div class="enlaces">
+            <a href="#">Gades Sports</a>
+            <a href="#">Legals</a>
+            <a href="#">Our Solutions</a>
+            <a href="#">Contact Us</a>
+        </div>
+
+        <div class="redes_sociales">
+            <img src="img/iconTwitter.png" alt="Twitter">
+            <img src="img/iconInstagram.png" alt="Instagram">
+            <img src="img/iconFacebook.png" alt="Facebook">
+        </div>
+        <p>Mail: info@gades-sports.es</p>
+        <p>Dir: Av. Universidad de Cádiz, 10, 11519 Puerto Real, Cádiz</p>
+        <p>© 2022 GadesSports, All right reserved.</p>
+    </footer>
+    <script src="header.js"></script>
+</body>
+
+</html>

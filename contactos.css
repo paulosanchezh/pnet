@@ -1,0 +1,318 @@
+body {
+    background: rgba(61, 184, 155, 0.005);
+    font-family: 'Inter', sans-serif;
+    margin: 0%;
+}
+
+/*Eliminamos el subrayado en las etiquetas a*/
+a {
+    text-decoration: none
+}
+
+/*Estilo Header*/
+header {
+    background-color: rgb(151, 222, 206, 0.35);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+/*logo empresa*/
+header img {
+    max-width: 60px;
+    margin: 0.5%;
+}
+
+/*ocultamos el menú de navegación para móvil*/
+.navMovil, .hideMenuMovil{
+    display: none;
+}
+
+/* Menú Central*/
+.navbar {
+    /*Para que los elementos se situen en el medio de la pagina y no en la mitad de su div,
+            que no sea realmente el centro*/
+    position: absolute;
+    left: 50%;
+    transform: translatex(-50%);
+    text-align: center;
+    width: 50%;
+}
+
+.navbar a {
+    padding: 2%;
+    color: #6B7280;
+    font-weight: bolder;
+    font-size: 0.9em;
+}
+
+/*FIN Menú Central*/
+
+/*Area Registro*/
+header>div {
+    display: flex;
+    align-items: center;
+}
+
+header>div>a {
+    align-self: center;
+    color: #6B7280;
+    font-weight: bolder;
+    font-size: 0.9em;
+}
+
+header>div>input {
+    background-color: #62B6B7;
+    color: white;
+    font-weight: bolder;
+    font-size: 0.9em;
+    border-radius: 5px;
+    border: 0px;
+    padding: 5%;
+    margin-right: 5%;
+}
+
+/*FIN Area Registro*/
+/*FIN estilo header*/
+
+/*about us*/
+
+.about_us {
+    position: relative;
+    width: 100%;
+    height: auto;
+}
+
+.about_us h1 {
+    position: relative;
+    font-style: normal;
+    font-size: 3em;
+    align-items: center;
+    text-align: center;
+    color: #62B6B7;
+    margin-top: 8%;
+
+}
+
+.presentation {
+    position: relative;
+    width: 45%;
+    height: 5em;
+    background-color: rgba(203, 237, 213, 0.3);
+    margin: auto;
+    margin-top: 5%;
+    border-radius: 20px;
+}
+
+.presentation p {
+    position: absolute;
+    text-align: center;
+    color: #000000;
+}
+
+.contact_tile {
+    position: relative;
+    width: 45%;
+    height: 2em;
+    background-color: rgba(203, 237, 213, 0.3);
+    margin: auto;
+    margin-top: 5%;
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.contact_tile p {
+    position: relative;
+    color: #000000;
+}
+
+.about_us iframe {
+    width: 30%;
+    display: flex;
+    border-radius: 5px;
+    margin-top: 3%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 5%;
+}
+
+/*FIN about us*/
+
+/*Form*/
+
+form {
+    position: relative;
+    margin-top: 3%;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 30%;
+    border-radius: 5px;
+    background-color: rgba(217, 217, 217, 1);
+}
+
+label {
+    margin-top: 10px;
+    font-weight: normal;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+    margin-bottom: 20px;
+    padding: 5px;
+    width: 60%;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+button[type="submit"] {
+    background-color: #62B6B7;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-top: 20px;
+    font-size: 16px;
+}
+
+button[type="submit"]:hover {
+    background-color: #77dbdd;
+}
+
+/*FIN Form*/
+
+/*Footer*/
+footer {
+    background-color: #D9D9D9;
+    margin-bottom: 0%;
+    padding-top: 2%;
+    padding-bottom: 0.5%;
+    width: 100%;
+    position: relative;
+    max-height: 280px;
+}
+
+.enlaces {
+    position: relative;
+    text-align: center;
+}
+
+.enlaces a {
+    margin-right: 10px;
+    font-size: 0.9em;
+    color: #000000;
+}
+
+.redes_sociales {
+    text-align: center;
+    margin-top: 2%;
+    margin-bottom: 2%;
+}
+
+.redes_sociales img {
+    margin-right: 25px;
+}
+
+p {
+    text-align: center;
+    font-size: small;
+}
+
+/*FIN Footer*/
+
+/* Error Message */
+
+#error_message {
+    position: fixed;
+    padding: 10px;
+    bottom: 5%;
+    background-color: #f44336;
+    display: none;
+    color: white;
+    width: 15%;
+    border-radius: 5px;
+    animation: slideIn 0.5s ease forwards, slideOut 0.5s ease 3.5s forwards;
+    z-index: 100;
+}
+
+#success_message {
+    position: fixed;
+    padding: 10px;
+    bottom: 5%;
+    background-color: rgb(35, 164, 35);
+    display: none;
+    color: white;
+    width: 15%;
+    border-radius: 5px;
+    animation: slideIn 0.5s ease forwards, slideOut 0.5s ease 4s forwards;
+    z-index: 100;
+}
+
+@keyframes slideIn {
+    from {
+        right: -100%;
+    }
+
+    to {
+        right: 0;
+    }
+}
+
+@keyframes slideOut {
+    from {
+        right: 0;
+    }
+
+    to {
+        right: -100%;
+    }
+}
+
+/* FIN Error Message */
+
+/*Media Query pensado para formato móvil*/
+@media (max-width: 800px) {
+    /*ocultamos los elementos que no queremos que se muestren en formato móvil*/
+    .navbar, #contendorRegistro, #eslogan, #imgMenuAbierto{
+        display: none;
+    }
+
+    /*Mostramos el menú para movil*/
+    .hideMenuMovil{
+        display: inline-block;
+        cursor: pointer;
+    }
+
+    .navMovil ul{
+        background-color: #62B6B7 ;
+        list-style: none;
+    }
+
+    .navMovil ul li{
+        width: 100%;
+        display: inline-block;
+        padding: 16px;
+        /*transicion para cuando estemos sobre un elemento, el hover
+        aparezca de forma gradual*/
+        transition: all ease-in-out 200ms;
+        text-align: left;
+    }
+
+    /*añadimos una sombra para ver sobre que elemento estamos*/
+    .navMovil ul li:hover{
+        background-color: #439A97;
+        width: 85%;
+    }
+
+    .navMovil ul li a{
+        color: white;
+    }
+}
+/*FIN Media Query*/

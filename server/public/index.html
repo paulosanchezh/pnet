@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<!-- Style of the pages -->
+
+	<link rel="stylesheet" href="index.css">
+
+	<!-- Scripts for api calls -->
+
+	<script type="text/javascript" src="js/wsinvocations.js"></script>
+	<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+	<!-- Title of the page -->
+
+	<title>Admin Page</title>
+</head>
+
+<body>
+	<header>
+		<h1> Welcome to the admin page </h1>
+	</header>
+
+	<div id="error_message"></div>
+	<div id="success_message"></div>
+
+	<main>
+		<div class="container">
+			<button id="displayListButton">Display list</button>
+			<div class="search">
+				<input type="text" placeholder="Search">
+			</div>
+			<ul id="fieldList"></ul>
+			<input id="delete_button" type="button" value="Delete all list" onclick="deleteAllReservas()">
+			<form name="newFieldForm" onsubmit="return validateForm()">
+				<h1>Create a new playing field</h1><br>
+				<div class="fieldInput">
+					<label>Center:</label><br>
+					<input type="text" id="center" name="center" value="">
+				</div>
+				<div class="fieldInput">
+					<label>Sport:</label><br>
+					<input type="text" id="sport" name="sport" value="">
+				</div>
+				<div class="fieldInput">
+					<label>Capacity:</label><br>
+					<input type="text" id="capacity" name="capacity" value="">
+				</div>
+				<input id="submit_button" type="submit" value="Submit">
+			</form>
+			<div class="edit">
+				<h1>Edit a field</h1>
+				<form name="editFieldForm" onsubmit="return validateEditForm()">
+					<input id="editCenter" type="text" placeholder="Center">
+					<input id="editSport" type="text" placeholder="Sport">
+					<input id="editCapacity" type="text" placeholder="Capacity">
+					<input id="editDate" type="text" placeholder="Date">
+					<input id="editHour" type="text" placeholder="Hour">
+					<input id="editDuration" type="text" placeholder="Duration">
+					<input id="cancel_button" type="button" value="Cancel">
+					<input id="submit_button" type="submit" value="Edit">
+					<input id="_id" type="submit" value="" style="display: none;">
+				</form>
+			</div>
+		</div>
+	</main>
+	<script type="text/javascript" src="js/index.js"></script>
+</body>
+
+</html>

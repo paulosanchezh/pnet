@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="contactos.css" media="screen">
+    <script src="contactos.js"></script>
+
+    <title>Contactos</title>
+</head>
+
+<body>
+    <header>
+        <div class="hideMenuMovil">
+            <img src="img/Icon/menu.png" alt="Menu" id="imgMenu">
+            <img src="img/Icon/menuAbierto.png" alt="MenuAbierto" id="imgMenuAbierto">
+        </div>
+
+        <nav class="navMovil">
+            <ul>
+                <li><a href="instalaciones.html">Instalaciones</a></li>
+                <li><a href="salaReservas.html">Reservas</a></li>
+                <li><a href="contactos.html">Sobre Nosotros</a></li>
+                <li><a href="#">Inicia Sesión</a></li>
+                <li><a href="#">Regístrate</a></li>
+            </ul>
+        </nav>
+
+        <a href="index.html"><img src="img/logoGadesSports.png" alt="logo Empresa"></a>
+        
+        <nav class="navbar">
+            <a href="instalaciones.html">Instalaciones</a>
+            <a href="salaReservas.html">Reservas</a>
+            <a href="contactos.html">Sobre Nosotros</a>
+        </nav>
+
+        <div id="contendorRegistro">
+            <a href="#">Inicia Sesión</a>
+            <input type="button" value="Regístrate">
+        </div>  
+    </header>
+
+    <div class="about_us">
+        <h1>Qué es Gades Sports</h1>
+        <div class="presentation">
+            <p>Somos un equipo de dos estudiantes de informática. ¿Nuestro proyecto? Crear una plataforma fácil de usar
+                que permita a todo el mundo encontrar y reservar terrenos en cualquier lugar de la provincia de Cádiz.
+            </p>
+        </div>
+        <h1>Cómo contactarnos</h1>
+        <div id="error_message"></div>
+        <div id="success_message"></div>
+        <div class="contact_tile">
+            <p>Puede rellenar el siguiente formulario, le responderemos lo antes posible.</p>
+        </div>
+        <form name="contactosForm" onsubmit="return validateForm()">
+            <label for="firstname">Nombre :</label>
+            <input type="text" id="firstname" name="firstname" required>
+            <label for="lastname">Apellido :</label>
+            <input type="text" id="lastname" name="lastname" required>
+            <label for="email">Correo :</label>
+            <input type="email" id="email" name="email" required>
+            <label for="title">Titulo :</label>
+            <input type="text" id="title" name="title" required>
+            <label for="message">Mensage :</label>
+            <textarea id="message" name="message" required></textarea>
+            <button type="submit">Enviar</button>
+        </form>
+        <h1>Ven a conocernos</h1>
+        <div class="contact_tile">
+            <p>Ven a conocernos a nuestra universidad, la ESI de Puerto Real.</p>
+        </div>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3205.695344202623!2d-6.203803784440155!3d36.537343690151054!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x152f79854b8f0de1%3A0x8d075bd9e5895558!2sCollege%20of%20Engineering!5e0!3m2!1sfr!2ses!4v1679837858658!5m2!1sfr!2ses" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </div>
+
+    <footer>
+        <div class="enlaces">
+            <a href="#">Gades Sports</a>
+            <a href="#">Legals</a>
+            <a href="#">Our Solutions</a>
+            <a href="#">Contact Us</a>
+        </div>
+
+        <div class="redes_sociales">
+            <img src="img/iconTwitter.png" alt="Twitter">
+            <img src="img/iconInstagram.png" alt="Instagram">
+            <img src="img/iconFacebook.png" alt="Facebook">
+        </div>
+        <p>Mail: info@gades-sports.es</p>
+        <p>Dir: Av. Universidad de Cádiz, 10, 11519 Puerto Real, Cádiz</p>
+        <p>© 2022 GadesSports, All right reserved.</p>
+    </footer>
+    <script src="header.js"></script>
+</body>
+
+</html>

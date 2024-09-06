@@ -1,0 +1,360 @@
+/*Definimos los ajustes generales de la web*/
+    body {
+        background: rgba(61, 184, 155, 0.005);
+        font-family: 'Inter', sans-serif;
+        margin: 0%;
+    }
+
+/*Eliminamos el subrayado en las etiquetas a*/
+    a{
+        text-decoration:none
+    }
+
+/*Estilo Header*/
+    header{
+        background-color: rgb(151,222,206,0.35);
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    /*logo empresa*/
+        header img{
+            max-width: 60px;
+            margin: 0.5%;
+        }
+    
+    /*ocultamos el menú de navegación para móvil*/
+    .navMovil, .hideMenuMovil{
+        display: none;
+    }
+
+    /* Menú Central*/
+        .navbar{
+            /*Para que los elementos se situen en el medio de la pagina y no en la mitad de su div,
+            que no sea realmente el centro*/
+            position: absolute;
+            left: 50%;
+            transform: translatex(-50%);
+            text-align: center;
+            width: 50%;
+        }
+            
+        .navbar a{
+            padding: 2%;
+            color: #6B7280;
+            font-weight: bolder;
+            font-size: 0.9em;
+        }
+    /*FIN Menú Central*/
+
+    /*Area Registro*/
+        header>div{
+            display: flex;
+            align-items: center;
+        }
+
+        header>div>a{
+            align-self: center;
+            color: #6B7280;
+            font-weight: bolder;
+            font-size: 0.9em;
+        }
+
+        header>div>input{
+            background-color: #62B6B7;
+            color: white;
+            font-weight: bolder;
+            font-size: 0.9em;
+            border-radius: 5px;
+            border: 0px;
+            padding: 5%;
+            margin-right: 5%;
+        }
+    /*FIN Area Registro*/
+/*FIN estilo header*/
+
+/*Barra de Búsqueda*/
+    .contenedorBuscador form{
+        margin: 2%;
+        display: flex;
+        justify-content: left;
+        align-items: center;
+        width: 50%;
+        min-width: 450px;
+    }
+
+    .inputsBuscador {
+        font-size: 1em;
+        font-weight: 500;
+        text-align: left;
+        padding-left: 3%;
+        background: rgba(0, 0, 0, 0.05);
+        color: #6B7280;
+        border: 0px;
+        width: 25%;
+        height: 50px;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    }
+
+    #selectorDia{
+        font-size: 1em;
+        font-weight: 500;
+        text-align: left;
+        background: rgba(0, 0, 0, 0.05);
+        color: #6B7280;
+        border: 0px;
+        width: 25%;
+        height: 50px;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    }
+
+    #buscar{
+        font-size: 1.3em;
+        font-weight: 700; 
+        text-align: center;
+        background: rgba(67, 154, 151);
+        color: white;
+        border: 0px;
+        width: 20%;
+        height: 50px;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    }
+/*FIN Barra de Búsqueda*/
+
+/*Estilo Cards*/
+    .containerCards {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+
+    .tarjeta {
+        display: flex;
+        flex-direction: column;
+        background-color: white;
+        min-width: 200px;
+        width: 22.3%;
+        border-radius: 15px;
+        margin: 1%;
+        /*Sombra para resaltar las cards*/
+        filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+    }
+
+    /*Encabezado*/
+        .tituloCard {
+            position: relative;
+            display: flex;
+            padding: 0px;
+        }
+
+        .imgCards {
+            object-fit: cover;
+            width: 100%;
+            height: 100%;
+            max-height: 150px;
+            border-top-right-radius: 15px;
+            border-top-left-radius: 15px;
+            margin: 0px;
+        }
+
+        .nombreCentro {
+            position: absolute;
+            top: 65%;
+            left: 5%;
+            color: white;
+            display: flex;
+            overflow: auto;
+            font-size: 1.7em;
+            font-weight: bold;
+        }
+
+    /*FIN Encabezado*/
+
+    /*Cuerpo Card*/
+        .cuerpo {
+            display: flex;
+            flex-direction: column;
+            padding: 5%;
+            padding-top: 0%;
+        }
+
+        .ubicacion {
+            display: flex;
+            align-items: baseline;
+            justify-content: center;
+            margin: 0.5%;
+        }
+
+        .imgUbicacion {
+            width: 20px;
+            height: 12px;
+        }
+
+        .textoUbicacion {
+            font-size: 0.8em;
+            margin-bottom: 2%;
+        }
+
+        .imgEstrellas {
+            width: 80%;
+            margin: 0 auto;
+        }
+
+        .botonesCard {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            justify-items:flex-start;
+        }
+
+        .botonHora {
+            background-color: #439A97;
+            color: white;
+            width: 20%;
+            padding: 10px;
+            text-align: center;
+            text-decoration: none;
+            font-size: 16px;
+            border-radius: 30px;
+            margin-right: 1%;
+            margin-bottom: 2%;
+        }
+    /*FIN Cuerpo Card*/
+/*FIN Estilo Cards*/
+
+/*Footer*/
+footer {
+    background-color: #D9D9D9;
+    margin-bottom: 0%;
+    padding-top: 2%;
+    padding-bottom: 0.5%;
+    width: 100%;
+    position: relative;
+    max-height: 280px;
+}
+
+.enlaces {
+    position: relative;
+    text-align: center;
+}
+
+.enlaces a {
+    margin-right: 10px;
+    font-size: 0.9em;
+    color: #000000;
+}
+
+.redes_sociales {
+    text-align: center;
+    margin-top: 2%;
+    margin-bottom: 2%;
+}
+
+.redes_sociales img {
+    margin-right: 25px;
+}
+
+p {
+    text-align: center;
+    font-size: small;
+}
+/*FIN Footer*/
+
+/*Media Query pensado para formato móvil*/
+    @media (max-width: 800px) {
+
+        /*ocultamos los elementos que no queremos que se muestren en formato móvil*/
+        .navbar, #contendorRegistro, #eslogan, #imgMenuAbierto{
+            display: none;
+        }
+
+        /*Mostramos el menú para movil*/
+        .hideMenuMovil{
+            display: inline-block;
+            cursor: pointer;
+        }
+
+        .navMovil ul{
+            background-color: #62B6B7 ;
+            list-style: none;
+        }
+
+        .navMovil ul li{
+            width: 100%;
+            display: inline-block;
+            padding: 16px;
+            /*transicion para cuando estemos sobre un elemento, el hover
+            aparezca de forma gradual*/
+            transition: all ease-in-out 200ms;
+            text-align: left;
+        }
+
+        /*añadimos una sombra para ver sobre que elemento estamos*/
+        .navMovil ul li:hover{
+            background-color: #439A97;
+            width: 85%;
+        }
+
+        .navMovil ul li a{
+            color: white;
+        }
+
+        .containerCards{
+            display: flex;
+            flex-direction: column;
+            align-items: stretch;
+        }
+
+        .tarjeta{
+            min-height: 200px;
+            justify-content: flex-start;
+            min-width: 98%;
+            flex-direction: row;
+            align-items: stretch;
+            margin: 1%;
+        }
+
+        .tituloCard{
+            font-size: 3vw;
+            text-align: center;
+        }
+
+        .imgCards{
+            border-bottom-left-radius: 12px;
+            border-top-right-radius: 0px;
+            min-height:250px;
+            max-width: 250px;
+        }
+
+        .cuerpo{
+            padding: 1%;
+            justify-content: center;
+        }
+
+        .ubicacion{
+            margin-left: 4%;
+        
+        }
+
+        .textoUbicacion{
+            margin: 0px;
+            margin-bottom: 5%;
+        }
+
+        .botonesCard{
+            flex-direction: column;
+            justify-content: space-between;
+            min-width: 20%;
+        }
+
+        .botonHora{
+            align-self: center;
+            margin-top: 7%;
+            margin-bottom: 7%;
+            width: 70%;
+            margin-right: 0px;
+        }
+        
+    }
+/*FIN Media Query*/

@@ -1,0 +1,516 @@
+body {
+    background: rgba(61, 184, 155, 0.005);
+    font-family: 'Inter', sans-serif;
+    margin: 0%;
+}
+
+/*Eliminamos el subrayado en las etiquetas a*/
+a {
+    text-decoration: none
+}
+
+/*Estilo Header*/
+header {
+    background-color: rgb(151, 222, 206, 0.35);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+/*logo empresa*/
+header img {
+    max-width: 60px;
+    margin: 0.5%;
+}
+
+/*ocultamos el menú de navegación para móvil*/
+.navMovil, .hideMenuMovil{
+    display: none;
+}
+
+/* Menú Central*/
+.navbar {
+    /*Para que los elementos se situen en el medio de la pagina y no en la mitad de su div,
+            que no sea realmente el centro*/
+    position: absolute;
+    left: 50%;
+    transform: translatex(-50%);
+    text-align: center;
+    width: 50%;
+}
+
+.navbar a {
+    padding: 2%;
+    color: #6B7280;
+    font-weight: bolder;
+    font-size: 0.9em;
+}
+
+/*FIN Menú Central*/
+
+/*Area Registro*/
+header>div {
+    display: flex;
+    align-items: center;
+}
+
+header>div>a {
+    align-self: center;
+    color: #6B7280;
+    font-weight: bolder;
+    font-size: 0.9em;
+}
+
+header>div>input {
+    background-color: #62B6B7;
+    color: white;
+    font-weight: bolder;
+    font-size: 0.9em;
+    border-radius: 5px;
+    border: 0px;
+    padding: 5%;
+    margin-right: 5%;
+}
+
+/*FIN Area Registro*/
+/*FIN estilo header*/
+
+/*tile*/
+.tile {
+    position: relative;
+    width: 66.72%;
+    background-color: #F4F3F3;
+    display: block;
+    height: 80vh;
+    margin: 2.13% auto;
+    border-radius: 20px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    z-index: 1;
+}
+
+.information {
+    position: absolute;
+    width: 42%;
+    height: 100%;
+    background-color: white;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 20px 0px 0px 20px;
+    z-index: 2;
+}
+
+.information a {
+    color: #000000;
+
+}
+
+.information img {
+    width: 100%;
+    height: 35%;
+    position: relative;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 20px 0px 0px 00px;
+    z-index: 2;
+}
+
+.information h1 {
+    position: relative;
+    font-family: system-ui, Roboto;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 2em;
+    margin-left: 3%;
+}
+
+.data {
+    top: 5%;
+    position: relative;
+    width: 100%;
+    margin-bottom: 3%;
+    display: flex;
+    align-items: center;
+}
+
+.data img {
+    position: relative;
+    height: 50%;
+    width: auto;
+    margin-left: 3%;
+    box-shadow: 0px 0px 0px;
+    border-radius: 0px;
+}
+
+.data p {
+    position: relative;
+    color: #000000;
+    margin-left: 2%;
+    padding-bottom: 0.001%;
+}
+
+.reviews {
+    position: relative;
+    width: 100%;
+    height: 3%;
+    margin-left: 5%;
+    display: inline;
+}
+
+.reviews b {
+    color: #757272;
+    font-family: system-ui, Roboto;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 1.1em;
+    position: relative;
+    bottom: 0.15em;
+}
+
+.reviews img {
+    height: 1.2em;
+    width: auto;
+    margin-left: 5px;
+    box-shadow: 0px 0px 0px;
+    border-radius: 0px;
+}
+
+.reviews a {
+    color: #3888AB;
+    font-family: system-ui, Roboto;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 0.9em;
+    position: relative;
+    bottom: 0.15em;
+    margin-left: 1%;
+}
+
+.bar {
+    position: relative;
+    left: 10%;
+    width: 80%;
+    border: 0.5px solid #504c4c;
+    margin-top: 5%;
+}
+
+/*Booking*/
+
+form {
+    position: relative;
+    display: flex;
+    width: 100%;
+    height: 100%;
+}
+
+.booking {
+    height: 100%;
+    position: absolute;
+    z-index: 2;
+    width: 58%;
+    right: 0%;
+}
+
+.title_bar {
+    position: relative;
+    background-color: #ffffff;
+    height: 16%;
+    width: 100%;
+    border-style: solid;
+    border-width: 1px 1px 0px 0px;
+    border-color: grey;
+    border-radius: 0px 20px 0px 0px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.title_bar h1 {
+    color: #000000;
+    font-family: system-ui, Roboto;
+    font-style: normal;
+    font-weight: 800;
+    font-size: 2em;
+}
+
+.booking select {
+    background: rgba(0, 0, 0, 0.05);
+    color: #6B7280;
+    border: 0px;
+    width: 30%;
+    height: 20%;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+.firstname {
+    position: absolute;
+    width: 30%;
+    height: 20%;
+    margin-top: 4%;
+    margin-left: 10%;
+}
+
+.firstname input {
+    position: relative;
+    width: 100%;
+    height: 15%;
+}
+
+.lastname {
+    position: absolute;
+    width: 30%;
+    height: 20%;
+    margin-top: 4%;
+    margin-left: 50%;
+}
+
+.lastname input {
+    position: relative;
+    width: 100%;
+    height: 15%;
+}
+
+.email {
+    position: absolute;
+    width: 50%;
+    height: 20%;
+    margin-top: 15%;
+    margin-left: 10%;
+}
+
+.email input {
+    position: relative;
+    width: 100%;
+    height: 15%;
+}
+
+.reservation_date {
+    position: absolute;
+    width: 20%;
+    height: 20%;
+    margin-top: 27%;
+    margin-left: 10%;
+}
+
+.reservation_date input {
+    margin-top: 1%;
+    height: 20%;
+    width: 100%;
+    position: relative;
+}
+
+.reservation_hour {
+    position: absolute;
+    width: 30%;
+    height: 20%;
+    margin-top: 27%;
+    margin-left: 50%;
+}
+
+.reservation_hour select {
+    margin-top: 1%;
+    height: 20%;
+    width: 60%;
+    position: relative;
+    background-color: #ffffff;
+    border: grey;
+    border-style: solid;
+    border-width: 1px;
+    color: black;
+    box-shadow: 0px 0px 0px;
+}
+
+.duration {
+    position: absolute;
+    width: 100%;
+    height: 30%;
+    margin-top: 42%;
+    margin-left: 10%;
+}
+
+.bullet {
+    position: relative;
+    width: 100%;
+    margin-right: 13%;
+    display: inline;
+    justify-content: space-between;
+}
+
+.people {
+    position: absolute;
+    width: 30%;
+    height: 20%;
+    margin-top: 58%;
+    margin-left: 10%;
+}
+
+.people select {
+    margin-top: 1%;
+    height: 20%;
+    width: 60%;
+    position: relative;
+    background-color: #ffffff;
+    border: grey;
+    border-style: solid;
+    border-width: 1px;
+    color: black;
+    box-shadow: 0px 0px 0px;
+}
+
+.material {
+    position: absolute;
+    width: 100%;
+    height: 30%;
+    margin-top: 70%;
+    margin-left: 10%;
+}
+
+#submit_button {
+    position: absolute;
+    width: 15%;
+    height: 5%;
+    background: #439A97;
+    border-radius: 30px;
+    box-shadow: 0px 0px 0px;
+    border: 0;
+    margin-top: 85%;
+    right: 5%;
+    color: white;
+    font-size: large;
+    font-weight: bold;
+}
+
+
+/*FIN BOOKING*/
+
+/*FIN tile*/
+
+/*Footer*/
+footer {
+    background-color: #D9D9D9;
+    margin-bottom: 0%;
+    padding-top: 2%;
+    padding-bottom: 0.5%;
+    width: 100%;
+    position: relative;
+    max-height: 280px;
+}
+
+.enlaces {
+    position: relative;
+    text-align: center;
+}
+
+.enlaces a {
+    margin-right: 10px;
+    font-size: 0.9em;
+    color: #000000;
+}
+
+.redes_sociales {
+    text-align: center;
+    margin-top: 2%;
+    margin-bottom: 2%;
+}
+
+.redes_sociales img {
+    margin-right: 25px;
+}
+
+p {
+    text-align: center;
+    margin-top: 2%;
+    margin-bottom: 2%;
+    font-size: small;
+}
+/*FIN Footer*/
+
+/* Error Message */
+
+#error_message {
+    position: fixed;
+    padding: 10px;
+    bottom: 5%;
+    background-color: #f44336;
+    display: none;
+    color: white;
+    width: 15%;
+    border-radius: 5px;
+    animation: slideIn 0.5s ease forwards, slideOut 0.5s ease 3.5s forwards;
+    z-index: 100;
+}
+
+#success_message {
+    position: fixed;
+    padding: 10px;
+    bottom: 5%;
+    background-color: rgb(35, 164, 35);
+    display: none;
+    color: white;
+    width: 15%;
+    border-radius: 5px;
+    animation: slideIn 0.5s ease forwards, slideOut 0.5s ease 4s forwards;
+    z-index: 100;
+}
+
+@keyframes slideIn {
+    from {
+        right: -100%;
+    }
+
+    to {
+        right: 0;
+    }
+}
+
+@keyframes slideOut {
+    from {
+        right: 0;
+    }
+
+    to {
+        right: -100%;
+    }
+}
+/* FIN Error Message */
+
+/*Media Query pensado para formato móvil*/
+    @media (max-width: 800px) {
+        /*ocultamos los elementos que no queremos que se muestren en formato móvil*/
+        .navbar, #contendorRegistro, #eslogan{
+            display: none;
+        }
+
+        /*Mostramos el menú para movil*/
+        .hideMenuMovil{
+            display: inline-block;
+            cursor: pointer;
+        }
+
+        #imgMenuAbierto{
+            display: none;
+        }
+
+        .navMovil ul{
+            background-color: #62B6B7 ;
+            list-style: none;
+        }
+
+        .navMovil ul li{
+            width: 100%;
+            display: inline-block;
+            padding: 16px;
+            /*transicion para cuando estemos sobre un elemento, el hover
+            aparezca de forma gradual*/
+            transition: all ease-in-out 200ms;
+            text-align: left;
+        }
+
+        .navMovil ul li:hover{
+            background-color: #439A97;
+            width: 85%;
+        }
+
+        .navMovil ul li a{
+            color: white;
+        }
+    }
+/*FIN Media Query*/
